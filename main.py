@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding:UTF-8 -*-
-# Code at github.com/llvllch/doomed 
-# Oct' 21
+# Code at github.com/llvllch/cassette 
+# Aug' 22
 
 #--------------Driver Library-----------------#
 import RPi.GPIO as GPIO
@@ -24,6 +24,8 @@ import yaml
 dirname = os.path.dirname(__file__)
 picdir = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'images')
 fontdir = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'fonts')
+configfile = os.path.join(os.path.dirname(os.path.realpath(__file__)),'config.yaml')
+
 with open(configfile) as f:
     config = yaml.load(f, Loader=yaml.FullLoader)
 api=config['api']
