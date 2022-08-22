@@ -16,7 +16,7 @@ A barely-adjusted version of https://github.com/veebch/doomed that runs on a Ras
   Now you need to set up a YouTube API key that will allow you to use their API and pull your subsciption count. That key needs to be placed in the `config.yaml` file.
   
   # Wiring
-| OLED  | GPIO
+| OLED  | [GPIO](https://gpiozero.readthedocs.io/en/stable/_images/pin_layout.svg) |
 |-----------|------|
 | RST | 25 |
 | DC | 24 |
