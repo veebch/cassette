@@ -7,6 +7,6 @@ A barely-adjusted version of https://github.com/veebch/doomed that shows a YouTu
 
 # Installation
 
-git clone https://github.com/veebch/cassette
-cd cassette
-cp config_example.yaml config.yaml
+  git clone https://github.com/veebch/cassette
+  cd cassette
+  cp config_example.yaml config.yaml
