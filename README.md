@@ -3,4 +3,4 @@
 
 # Cassette
 
-A barely-adjusted version of https://github.com/veebch/doomed that shows a YouTube subscriber number on a 200 by 200 OLED screen.
+A barely-adjusted version of https://github.com/veebch/doomed that shows a YouTube subscriber number on a 128 by 128 OLED screen (**SSD1351**).
