@@ -3,7 +3,7 @@
 
 # Cassette
 
-A barely-adjusted version of https://github.com/veebch/doomed that shows a YouTube subscriber number on a 128 x 128 OLED screen (**SSD1351**).
+A barely-adjusted version of https://github.com/veebch/doomed that runs on a Raspberry Pi Zero and shows a YouTube subscriber number on a 128 x 128 OLED screen (**SSD1351**).
 
 # Installation
 
@@ -14,3 +14,10 @@ A barely-adjusted version of https://github.com/veebch/doomed that shows a YouTu
   ```
   
   Now you need to set up a YouTube API key that will allow you to use their API and pull your subsciption count. That key needs to be placed in the `config.yaml` file.
+  
+  # Wiring
+| OLED  | GPIO
+|-----------|------|
+| RST | 25 |
+| DC | 24 |
+| CS  | 8 |
