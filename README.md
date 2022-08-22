@@ -22,6 +22,8 @@ A barely-adjusted version of https://github.com/veebch/doomed that runs on a Ras
 | GND | GND | 6  |  
 | MOSI/ DIN | 10 | 19 |
 | CLK | 23 | 23 |
-| RST | 25 | 22 |
-| DC | 24 | 18 |
 | CS  | 8 | 24 |
+| DC | 24 | 18 |
+| RST | 25 | 22 |
+
+
