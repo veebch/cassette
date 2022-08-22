@@ -18,6 +18,10 @@ A barely-adjusted version of https://github.com/veebch/doomed that runs on a Ras
   # Wiring
 | OLED  | [GPIO](https://gpiozero.readthedocs.io/en/stable/_images/pin_layout.svg) |
 |-----------|------|
+| VCC | 1 |
+| GND | 6 |
+| MOSI/ DIN | 19 |
+| CLK | 23 |
 | RST | 25 |
 | DC | 24 |
 | CS  | 8 |
