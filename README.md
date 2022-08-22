@@ -12,3 +12,5 @@ A barely-adjusted version of https://github.com/veebch/doomed that shows a YouTu
   cd cassette
   cp config_example.yaml config.yaml
   ```
+  
+  Now you need to set up a YouTube API key that will allow you to use their API and pull your subsciption count. That key needs to be placed in the `config.yaml` file.
