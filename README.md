@@ -28,8 +28,14 @@ A barely-adjusted version of https://github.com/veebch/doomed that runs on a Ras
 
 # Running
 
+To run the code that quaries the api and displays your number to the screen, issue the command:
 ```
 python3 main.py
 ```
+That's it!
+
+# Licence
+
+GPL 3.0
 
 
