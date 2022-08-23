@@ -34,9 +34,13 @@ api=config['api']
 def Display_Picture(File_Name,score):
     image = Image.open(File_Name)
     draw = ImageDraw.Draw(image)
+    if score>0:
+        prettynum = format(score,",")
+    else:
+        prettynum = ""
     font = ImageFont.truetype(os.path.join(fontdir,'RobotoCondensed-Bold.ttf'),2
 2)
-    draw.text((90, 103), str(score), fill = "BLACK", font = font)
+    draw.text((35, 103), prettynum, fill = "BLACK", font = font)
     angle = 180
     image = image.rotate(angle, expand=True)
     OLED.Display_Image(image)
@@ -46,12 +50,11 @@ def getindex(api):
     headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
     url="https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCz5BOU9J9pB_O0B8-rDjCWQ&key="+api
     try:
-        fearjson=requests.get(url, headers=headers).json()
-        print(fearjson)
-        data= fearjson['items']
+        youtubestats=requests.get(url, headers=headers).json()
+        data= youtubestats['items']
         score=data[0]['statistics']['subscriberCount']
     except:
-        score=""
+        score=0
     return score
     
 #----------------------MAIN-------------------------#
@@ -61,11 +64,11 @@ try:
     
         #-------------OLED Init------------#
         OLED.Device_Init()
-        Display_Picture(os.path.join(picdir, "heart.jpg"),"")
+        Display_Picture(os.path.join(picdir, "heart.jpg"),0)
         OLED.Delay(2000)
-        Display_Picture(os.path.join(picdir, "heartend.jpg"),"")
+        Display_Picture(os.path.join(picdir, "heartend.jpg"),0)
         OLED.Delay(2000)
-        Display_Picture(os.path.join(picdir, "heart.jpg"),"")
+        Display_Picture(os.path.join(picdir, "heart.jpg"),0)
         OLED.Delay(2000)
         while True:
             score=getindex()
