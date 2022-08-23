@@ -26,4 +26,10 @@ A barely-adjusted version of https://github.com/veebch/doomed that runs on a Ras
 | DC | 24 | 18 |
 | RST | 25 | 22 |
 
+# Running
+
+```
+python3 main.py
+```
+
 
