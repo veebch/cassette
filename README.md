@@ -14,7 +14,7 @@ A barely-adjusted version of https://github.com/veebch/doomed that runs on a Ras
   cp config_example.yaml config.yaml
   ```
   
-  Now you need to [set up a YouTube API key](https://blog.hubspot.com/website/how-to-get-youtube-api-key) that will allow you to use their API and pull your subsciption count. That key needs to be placed in the `config.yaml` file.
+  Now you need to [set up a YouTube API key](https://blog.hubspot.com/website/how-to-get-youtube-api-key) that will allow you to use their API and pull your subsciption count. That key needs to be placed in the `config.yaml` file along with your channel ID.
   
 (If you want to access  private youtube data, use oauth 2)
   
