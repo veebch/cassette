@@ -71,7 +71,7 @@ try:
         Display_Picture(os.path.join(picdir, "heart.jpg"),0)
         OLED.Delay(2000)
         while True:
-            score=getindex()
+            score=getindex(api)
             print(score)
             Display_Picture(os.path.join(picdir, "heartYT.jpg"),score)
             time.sleep(120)
