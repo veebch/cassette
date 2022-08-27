@@ -29,7 +29,7 @@ configfile = os.path.join(os.path.dirname(os.path.realpath(__file__)),'config.ya
 with open(configfile) as f:
     config = yaml.load(f, Loader=yaml.FullLoader)
 api=config['api']
-
+id=config['id']
 
 def Display_Picture(File_Name,score):
     image = Image.open(File_Name)
@@ -46,9 +46,9 @@ def Display_Picture(File_Name,score):
     OLED.Display_Image(image)
 
 
-def getindex(api):
+def getindex(api,id):
     headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
-    url="https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCz5BOU9J9pB_O0B8-rDjCWQ&key="+api
+    url="https://www.googleapis.com/youtube/v3/channels?part=statistics&id="+id+"&key="+api
     try:
         youtubestats=requests.get(url, headers=headers).json()
         data= youtubestats['items']
@@ -71,7 +71,7 @@ try:
         Display_Picture(os.path.join(picdir, "heart.jpg"),0)
         OLED.Delay(2000)
         while True:
-            score=getindex(api)
+            score=getindex(api,id)
             print(score)
             Display_Picture(os.path.join(picdir, "heartYT.jpg"),score)
             time.sleep(120)
