@@ -38,8 +38,7 @@ def Display_Picture(File_Name,score):
         prettynum = format(score,",")
     else:
         prettynum = ""
-    font = ImageFont.truetype(os.path.join(fontdir,'RobotoCondensed-Bold.ttf'),2
-2)
+    font = ImageFont.truetype(os.path.join(fontdir,'RobotoCondensed-Bold.ttf'),22)
     draw.text((35, 103), prettynum, fill = "BLACK", font = font)
     angle = 90
     image = image.rotate(angle, expand=True)
