@@ -1,7 +1,5 @@
 ![Action Shot](/images/cassettesmall.jpg)
 
-[![YouTube Channel Views](https://img.shields.io/youtube/channel/views/UCz5BOU9J9pB_O0B8-rDjCWQ?label=YouTube&style=social)](https://www.youtube.com/channel/UCz5BOU9J9pB_O0B8-rDjCWQ)
-
 # Cassette
 
 A barely-adjusted version of https://github.com/veebch/doomed that runs on a Raspberry Pi Zero and shows a YouTube subscriber count on a 128 x 128 OLED screen (**SSD1351**). A bit niche, but really easy to remix it to show some numbers you care about.
